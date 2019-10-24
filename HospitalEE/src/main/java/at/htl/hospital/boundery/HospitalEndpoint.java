@@ -32,4 +32,5 @@ public class HospitalEndpoint {
         return em.find(Worker.class,id);
 
     }
+
 }
