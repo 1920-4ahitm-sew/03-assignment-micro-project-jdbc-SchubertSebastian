@@ -2,7 +2,9 @@ package at.htl.krankenhausee.entity;
 
 import javax.persistence.*;
 
+
 @Entity
+
 @Table(name="MIT_MITARBEITER")
 @NamedQueries(
      @NamedQuery(
@@ -10,6 +12,8 @@ import javax.persistence.*;
              query = "select m from Mitarbeiter m"
      )
 )
+
+
 public class Mitarbeiter {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
