@@ -11,6 +11,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import java.util.List;
 
 @Stateless
 @Path("/")
@@ -31,6 +32,14 @@ public class HospitalEndpoint {
 
         return em.find(Worker.class,id);
 
+    }
+
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("all")
+    public List<Worker> getAll() {
+        return em.createNamedQuery("Worker.findall", Worker.class)
+                .getResultList();
     }
 
 }

@@ -55,4 +55,13 @@ public class Worker {
     public void setAge(int age) {
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return "Worker{" +
+                "vname='" + vname + '\'' +
+                ", nname='" + nname + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
