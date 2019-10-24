@@ -22,7 +22,8 @@ public class InitHospital {
 
         Worker worker = new Worker("Mark", "Bauer", 20);
         em.persist(worker);
-        
+        Worker worker2 = new Worker("Markus", "Bauer", 20);
+        em.persist(worker2);
 
 
     }
