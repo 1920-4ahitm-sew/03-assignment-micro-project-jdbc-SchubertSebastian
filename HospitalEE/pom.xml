@@ -28,7 +28,7 @@
     </dependencies>
 
     <build>
-        <finalName>vehicle</finalName>
+        <finalName>hospital</finalName>
     </build>
 
 </project>
